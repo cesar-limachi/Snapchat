@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
 
 class iniciarSesionViewController: UIViewController {
     
@@ -19,14 +20,30 @@ class iniciarSesionViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
+    
     
     
     //MARK: - Inicializador
     
+    //var credential:AuthCredential
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupGoogle()
+        
     }
+        
+    //MARK: - Funcion Google
+    
+    
+    private func setupGoogle(){
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.delegate = self
+        
+    }
+ 
     
     //MARK: - Actions
     
@@ -40,6 +57,17 @@ class iniciarSesionViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func btnGoogle(_ sender: Any) {
+        GIDSignIn.sharedInstance()?.signIn()
+        
+    }
+    
+    
+    
+    //MARK: - Google SigIn
+    
+    
 
 
 }

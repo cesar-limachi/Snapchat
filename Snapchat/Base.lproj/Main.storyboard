@@ -10,7 +10,7 @@
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="iniciarSesionViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="iniciarSesionViewController" customModule="Snapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,17 +64,29 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Oh-yr-5tY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAn-2H-kAF">
+                                <rect key="frame" x="175.5" y="529" width="63" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Google">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qnk-y5-iMM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="m30-Kq-ldb" firstAttribute="top" secondItem="dnD-Qa-eX8" secondAttribute="bottom" constant="25" id="66F-Wc-TQX"/>
                             <constraint firstItem="MfO-ew-wf8" firstAttribute="top" secondItem="pIb-kk-dQe" secondAttribute="bottom" constant="25" id="C9i-gH-KqC"/>
                             <constraint firstItem="A3P-Mp-a5C" firstAttribute="top" secondItem="MfO-ew-wf8" secondAttribute="bottom" constant="30" id="ClE-0Q-AcJ"/>
+                            <constraint firstItem="aAn-2H-kAF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E4t-s3-MSX"/>
                             <constraint firstItem="A3P-Mp-a5C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EtI-VV-q20"/>
                             <constraint firstItem="dnD-Qa-eX8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="GDW-YV-Wvy"/>
                             <constraint firstItem="ob6-bs-CQ5" firstAttribute="top" secondItem="m30-Kq-ldb" secondAttribute="bottom" constant="25" id="HsR-Iq-5uE"/>
                             <constraint firstItem="m30-Kq-ldb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nzp-f6-bla"/>
                             <constraint firstItem="MfO-ew-wf8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OLj-yO-Sts"/>
+                            <constraint firstItem="aAn-2H-kAF" firstAttribute="top" secondItem="A3P-Mp-a5C" secondAttribute="bottom" constant="30" id="PFp-4t-xSN"/>
                             <constraint firstItem="pIb-kk-dQe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QPb-AG-hFr"/>
                             <constraint firstItem="pIb-kk-dQe" firstAttribute="top" secondItem="ob6-bs-CQ5" secondAttribute="bottom" constant="25" id="mch-sn-PmY"/>
                             <constraint firstItem="dnD-Qa-eX8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnT-xW-rF5"/>
@@ -85,6 +97,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="ob6-bs-CQ5" id="ulE-xl-dEf"/>
                         <outlet property="passwordTextField" destination="MfO-ew-wf8" id="bVx-o7-VwD"/>
+                        <outlet property="signInButton" destination="aAn-2H-kAF" id="2Tj-Kd-Xn0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

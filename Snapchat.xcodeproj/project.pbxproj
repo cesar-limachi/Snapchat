@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D24ACA29E0352BE5B71CB7A /* Pods_Snapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C164106749D6ED7024F9E5C0 /* Pods_Snapchat.framework */; };
+		F756A822284AE08F0049B57B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756A821284AE08F0049B57B /* LoginViewController.swift */; };
 		F7F7DE202841686900BAD0B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7DE1F2841686900BAD0B5 /* AppDelegate.swift */; };
 		F7F7DE222841686900BAD0B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7DE212841686900BAD0B5 /* SceneDelegate.swift */; };
 		F7F7DE242841686900BAD0B5 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F7DE232841686900BAD0B5 /* iniciarSesionViewController.swift */; };
@@ -21,6 +22,7 @@
 		1762B3093528D54D6440383A /* Pods-Snapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.release.xcconfig"; path = "Target Support Files/Pods-Snapchat/Pods-Snapchat.release.xcconfig"; sourceTree = "<group>"; };
 		2AC64D3F37EB6584C710FBB1 /* Pods-Snapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat.debug.xcconfig"; path = "Target Support Files/Pods-Snapchat/Pods-Snapchat.debug.xcconfig"; sourceTree = "<group>"; };
 		C164106749D6ED7024F9E5C0 /* Pods_Snapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F756A821284AE08F0049B57B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F7F7DE1C2841686800BAD0B5 /* Snapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F7DE1F2841686900BAD0B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F7DE212841686900BAD0B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				F7F7DE1F2841686900BAD0B5 /* AppDelegate.swift */,
 				F7F7DE212841686900BAD0B5 /* SceneDelegate.swift */,
 				F7F7DE232841686900BAD0B5 /* iniciarSesionViewController.swift */,
+				F756A821284AE08F0049B57B /* LoginViewController.swift */,
 				F7F7DE252841686900BAD0B5 /* Main.storyboard */,
 				F7F7DE282841688D00BAD0B5 /* Assets.xcassets */,
 				F7F7DE2A2841688D00BAD0B5 /* LaunchScreen.storyboard */,
@@ -106,6 +109,7 @@
 				F7F7DE192841686800BAD0B5 /* Frameworks */,
 				F7F7DE1A2841686800BAD0B5 /* Resources */,
 				06805A6000BA2526926799CC /* [CP] Embed Pods Frameworks */,
+				8FE024524E0BFCBC87734BAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +185,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snapchat/Pods-Snapchat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8FE024524E0BFCBC87734BAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapchat/Pods-Snapchat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapchat/Pods-Snapchat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snapchat/Pods-Snapchat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD96FDC579B3A43F31993DEB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F756A822284AE08F0049B57B /* LoginViewController.swift in Sources */,
 				F7F7DE242841686900BAD0B5 /* iniciarSesionViewController.swift in Sources */,
 				F7F7DE202841686900BAD0B5 /* AppDelegate.swift in Sources */,
 				F7F7DE222841686900BAD0B5 /* SceneDelegate.swift in Sources */,
